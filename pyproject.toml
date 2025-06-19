@@ -1,6 +1,5 @@
 [project]
-dynamic = ["version"]
-# version = "3.0.0a1"
+version = "3.0.1"
 name = "specklepy"
 description = "The Python SDK for Speckle 2.0"
 readme = "README.md"
@@ -13,9 +12,9 @@ dependencies = [
     "deprecated>=1.2.15",
     "gql[requests,websockets]>=3.5.0",
     "httpx>=0.28.1",
+    "orjson==3.10.1",
     "pydantic>=2.10.5",
     "pydantic-settings>=2.7.1",
-    "ujson>=5.10.0",
 ]
 
 [dependency-groups]
@@ -32,7 +31,6 @@ dev = [
     "ruff>=0.9.2",
     "types-deprecated>=1.2.15.20241117",
     "types-requests>=2.32.0.20241016",
-    "types-ujson>=5.10.0.20240515",
 ]
 
 [project.urls]
